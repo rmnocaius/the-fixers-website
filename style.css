@@ -144,7 +144,7 @@ main {
   width: 50%;
   height: 70%;
   flex-direction: column;
-  background-color: 	#191970;
+  background-color:rgba(0, 0, 0, 0.8);
   border-radius: 0px;
 }
 
@@ -156,8 +156,8 @@ p {
 
 #servico{
   padding-top: 150px;
-  color: black;
-  background:  #ffff;
+  color: white;
+  background:  black;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -165,6 +165,7 @@ p {
 }
 .servico-um img, p, h2 {
   font-size: 9px;
+  border-radius: 5px;
   width: 300px;
   height: cover;
   margin-left: 30px;
@@ -173,6 +174,7 @@ p {
 
 .servico-dois img, p, h2{
   font-size: 20px;
+  border-radius: 5px;
   margin-top: 5px;
   width: 300px;
   height: cover;
@@ -181,6 +183,7 @@ p {
 
 .servico-tres img, p, h2{
   font-size: 15px;
+  border-radius: 5px;
   width: 300px;
   height: cover;
   margin-left: 30px;
@@ -189,6 +192,7 @@ p {
 .servico-quatro img {
   font-size: 15px;
   width: 300px;
+  border-radius: 5px;
   height: cover;
   margin-left: 30px;
 }
@@ -208,135 +212,67 @@ p {
   align-items: center;
   justify-content: baseline;
   margin-left: 30px;
-  color: #0067b8;
+  color: #1c01b6;
 }
+
 #produtos{
   display: flex;
-  padding-top: 80px;
-  color: white;
-  background: black;
-  background-size: cover;
+  align-items: center;
   height: 100vh;
-  font-family: arial;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  color: #1e075e;
+  background: white;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
 }
-.produto {
-  display: flex;
-  background-size: cover;
-  width: 0px;
-  height: 400px;
-  background-position: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 20px;
-  flex-direction: column;
-  
-}
-
-.produto img {
-  object-fit: cover;
-  height: 250px;
-}
-
-.slider {
-  margin: 0 auto;
-  width: 1000px;
-  height: 600px;
-  overflow: hidden;
-  margin-left: 330px;
+button{
+  margin: 8px;
+  transition: 0.3s;
+  background:#1c01b6;
+  color: white;
+  border: solid 1px white;
+  height: 50px;
+  width: 160px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  border-radius: 6px;
+  transform: translateX(0%);
+  transition: transform 1s ease-in;
+ }
+ .placa-video img {
+  width: 270px;
+  height: auto;
+  margin-left: 2px;
 }
 
-.slides {
-  width: 400%;
-  height: 400px;
-  display: flex;
-  overflow: hidden;
+.processador img {
+  width: 270px;
+  height: auto;
+  margin-left: 2px;
 }
 
-.slides input {
-  display: none;
+.placa-mae img {
+  width: 270px;
+  height: auto;
+  margin-left: 2px;
 }
 
-.slide {
-  width: 25%;
-  position: relative;
+.hd img {
+  width: 270px;
+  height: auto;
+  margin-left: 2px;
 }
 
-.slide, .slide img {
-  border-radius: 15px;
+.git img {
+  height: 50px;
+  width: auto;
+  margin-left: 550px;
 }
 
-.slide img {
-  width: 800px;
-}
-
-.manual-navegation {
-  position: absolute;
-  width: 800px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:Last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover {
-  background-color: #fff;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -75%;
-}
-
-.radio-btn:checked {
-  color: #fff !important;
-}
-
-.navigation-auto div {
-  border: 2px solid #20a6ff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.navigation-auto {
-  position: absolute;
-  width: 800px;
-  margin-top: 360px;
-  justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-left: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: white;
+.texto-inicial{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 200px;
 }
 
 footer {
@@ -345,35 +281,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   font-family: sans-serif;
-  background: #191970;
+  background: black;
   color: white;
-  height: 6vh;
- }
-
-.slide-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-
-.slide .first {
-  background-image: url("img/computador-aberto.jpg");
-}
-
-.slide .second {
-  background-image: url("img/processador.jpg");
-}
-
-.slide .thirdy {
-  background-image: url("img/hd2.jpg");
-}
-
-.slide .forty {
-  background-image: url("img/placa\ de\ video.jpg");
+  height: 8vh;
 }
