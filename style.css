@@ -125,16 +125,16 @@ main {
 }
 #sobre h2 {
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: -1px;
 }
 #sobre p {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
 }
 
 .text-inicial  {
-  font-family: arial;
+  font-family: sans-serif;
   display: flex;
   align-items: center;
   margin-top: 30px;
@@ -145,7 +145,7 @@ main {
   width: 50%;
   height: 70%;
   flex-direction: column;
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color:rgba(0, 0, 0, 0.9);
   border-radius: 0px;
 }
 
@@ -157,16 +157,14 @@ p {
 
 #servico{
   padding-top: 150px;
-  color: white;
-  background:  black;
-  background-size: cover;
+  color: #f0f0f0;
+  background:#111016;
   height: 100vh;
   display: flex;
-  align-items: top;
+  flex-direction: row;
 }
 .servico-um img, p, h2 {
   font-size: 9px;
-  border-radius: 5px;
   width: 300px;
   height: cover;
   margin-left: 30px;
@@ -175,7 +173,6 @@ p {
 
 .servico-dois img, p, h2{
   font-size: 20px;
-  border-radius: 5px;
   margin-top: 5px;
   width: 300px;
   height: cover;
@@ -184,7 +181,6 @@ p {
 
 .servico-tres img, p, h2{
   font-size: 15px;
-  border-radius: 5px;
   width: 300px;
   height: cover;
   margin-left: 30px;
@@ -193,7 +189,6 @@ p {
 .servico-quatro img {
   font-size: 15px;
   width: 300px;
-  border-radius: 5px;
   height: cover;
   margin-left: 30px;
 }
@@ -213,7 +208,6 @@ p {
   align-items: center;
   justify-content: baseline;
   margin-left: 30px;
-  color: chartreuse;
 }
 
 #produtos{
@@ -221,24 +215,21 @@ p {
   align-items: center;
   height: 100vh;
   width: 100%;
-  color: #1e075e;
+  color: #111016;
   background: white;
   text-align: center;
   font-family:Arial, Helvetica, sans-serif;
 }
 button{
   margin: 8px;
-  transition: 0.3s;
-  background:black;
-  color: chartreuse;
-  border: solid 1px white;
+  background:#0073ec;
+  color: #f0f0f0;
+  border: none;
   height: 50px;
   width: 160px;
-  font-family:arial;
+  font-family: sans-serif;
   font-size: 17px;
-  border-radius: 6px;
-  transform: translateX(0%);
-  transition: transform 1s ease-in;
+  border-radius: 2px;
  }
  .placa-video img {
   width: 270px;
@@ -286,7 +277,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   font-family: sans-serif;
-  background: black;
+  background: #111016;
   color: white;
   height: 8vh;
 }
